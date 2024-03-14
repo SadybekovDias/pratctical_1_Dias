@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обьекты и циклы</title>
+</head>
+<body>
+    <script src="./js/utils.js"></script>
+    <script src="./js/index.js"></script>
+
+    <script>
+    while (true) {
+
+        Hero.heroAttack();
+        Dragon.dragonAttack();
+
+        if (Dragon.hp <= 0) {
+            console.log('Герой победил');
+            break;
+        }
+        if (Hero.hp <= 0) {
+            console.log(`Дракон победил`);
+            break;
+        }
+
+    }
+    </script>
+</body>
+</html>
